@@ -94,7 +94,7 @@ st.markdown(
 import gdown
 
 # Download the file (this will handle authentication)
-gdown.download(f"https://drive.google.com/uc?id=1fIzxoGuBumGXpzqAfkP52CJdJdFO2Wx8", "data.csv", quiet=False)
+gdown.download(f"https://drive.google.com/uc?id=1_FS3OgJsvbW_Bl1tdSt42D988zKQf85D", "data.csv", quiet=False)
 df = pd.read_csv("data.csv")
 df["game_date"]=pd.to_datetime(df["game_date"])
 df["Year"]=df["game_date"].dt.year
