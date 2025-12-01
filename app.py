@@ -8,6 +8,10 @@ from plotly.subplots import make_subplots
 import plotly.express as px
 import colorsys
 
+
+st.set_page_config(page_title="NFL",
+                   layout="wide")
+
 def lighten_hex_color(hex_color: str, amount: float) -> str:
     """
     Lightens a hex color by the given amount.
@@ -87,9 +91,6 @@ st.markdown(
   unsafe_allow_html=True
 )
 
-#Df reading and manipulation
-st.set_page_config(page_title="NFL",
-                   layout="wide")
 import gdown
 
 # Download the file (this will handle authentication)
